@@ -1,10 +1,10 @@
 "use client"
 
 import LayoutTwo from "@/components/ltr/layout/layout-two";
-import useRemoveBodyClass from "@/components/ltr/useEffect-hook/useEffect-hook";
+import UseRemoveBodyClass from "@/components/ltr/useEffect-hook/useEffect-hook";
 import Link from "next/link";
 const page = () => {
-    useRemoveBodyClass(['None'], ['home-seven', 'home-nine','boxed-layout','home-six','home-two']);
+    UseRemoveBodyClass(['None'], ['home-seven', 'home-nine','boxed-layout','home-six','home-two']);
     return (
         <LayoutTwo>
             {/* *** START PAGE MAIN CONTENT *** */}
@@ -66,7 +66,7 @@ const page = () => {
                                                 <h4>Frequently Asked Question #1</h4>
                                                 <p>
                                                     Lorem Ipsum is simply dummy text of the printing and
-                                                    typesetting industry. Lorem Ipsum has been the industry's
+                                                    typesetting industry. Lorem Ipsum has been the industry s
                                                     standard dummy text ever since the 1500s, when an unknown
                                                     printer took a galley of type and scrambled it to make a
                                                     type specimen book. It has survived not only five
@@ -106,7 +106,7 @@ const page = () => {
                                                 <h4>Frequently Asked Question #2</h4>
                                                 <p>
                                                     Lorem Ipsum is simply dummy text of the printing and
-                                                    typesetting industry. Lorem Ipsum has been the industry's
+                                                    typesetting industry. Lorem Ipsum has been the industrys
                                                     standard dummy text ever since the 1500s, when an unknown
                                                     printer took a galley of type and scrambled it to make a
                                                     type specimen book. It has survived not only five
@@ -146,7 +146,7 @@ const page = () => {
                                                 <h4>Frequently Asked Question #3</h4>
                                                 <p>
                                                     Lorem Ipsum is simply dummy text of the printing and
-                                                    typesetting industry. Lorem Ipsum has been the industry's
+                                                    typesetting industry. Lorem Ipsum has been the industry s
                                                     standard dummy text ever since the 1500s, when an unknown
                                                     printer took a galley of type and scrambled it to make a
                                                     type specimen book. It has survived not only five
@@ -186,7 +186,7 @@ const page = () => {
                                                 <h4>Frequently Asked Question #4</h4>
                                                 <p>
                                                     Lorem Ipsum is simply dummy text of the printing and
-                                                    typesetting industry. Lorem Ipsum has been the industry's
+                                                    typesetting industry. Lorem Ipsum has been the industry s
                                                     standard dummy text ever since the 1500s, when an unknown
                                                     printer took a galley of type and scrambled it to make a
                                                     type specimen book. It has survived not only five
@@ -226,7 +226,7 @@ const page = () => {
                                                 <h4>Frequently Asked Question #5</h4>
                                                 <p>
                                                     Lorem Ipsum is simply dummy text of the printing and
-                                                    typesetting industry. Lorem Ipsum has been the industry's
+                                                    typesetting industry. Lorem Ipsum has been the industry s
                                                     standard dummy text ever since the 1500s, when an unknown
                                                     printer took a galley of type and scrambled it to make a
                                                     type specimen book. It has survived not only five
@@ -266,7 +266,7 @@ const page = () => {
                                                 <h4>Frequently Asked Question #6</h4>
                                                 <p>
                                                     Lorem Ipsum is simply dummy text of the printing and
-                                                    typesetting industry. Lorem Ipsum has been the industry's
+                                                    typesetting industry. Lorem Ipsum has been the industry s
                                                     standard dummy text ever since the 1500s, when an unknown
                                                     printer took a galley of type and scrambled it to make a
                                                     type specimen book. It has survived not only five

@@ -1,13 +1,14 @@
 "use client"
 import LayoutTwo from "@/components/ltr/layout/layout-two";
 import LeftCarousal from "@/components/ltr/left-carousal/left-carousal";
-import useRemoveBodyClass from "@/components/ltr/useEffect-hook/useEffect-hook";
+import UseRemoveBodyClass from "@/components/ltr/useEffect-hook/useEffect-hook";
 import Link from "next/link";
 import StickyBox from "react-sticky-box";
+import Image from 'next/image';
 
 
 const page = () => {
-    useRemoveBodyClass(['None'], ['home-seven', 'home-nine','boxed-layout','home-six','home-two']);
+    UseRemoveBodyClass(['None'], ['home-seven', 'home-nine','boxed-layout','home-six','home-two']);
     return (
         <LayoutTwo>
             {/* START PAGE TITLE */}
@@ -51,7 +52,7 @@ const page = () => {
                                     <div className="col-6 col-sm-6 thm-padding">
                                         <div className="slider-post post-height-2">
                                             <Link href="#" className="news-image">
-                                                <img
+                                              <Image
                                                     src="assets/images/slider-260x230-7.jpg"
                                                     alt=""
                                                     className="img-fluid"
@@ -76,7 +77,7 @@ const page = () => {
                                     <div className="col-6 col-sm-6 thm-padding">
                                         <div className="slider-post post-height-2">
                                             <Link href="#" className="news-image">
-                                                <img
+                                              <Image
                                                     src="assets/images/slider-260x230-8.jpg"
                                                     alt=""
                                                     className="img-fluid"
@@ -101,7 +102,7 @@ const page = () => {
                                     <div className="col-6 col-sm-6 thm-padding">
                                         <div className="slider-post post-height-2">
                                             <Link href="#" className="news-image">
-                                                <img
+                                              <Image
                                                     src="assets/images/slider-260x230-9.jpg"
                                                     alt=""
                                                     className="img-fluid"
@@ -126,7 +127,7 @@ const page = () => {
                                     <div className="col-6 col-sm-6 thm-padding">
                                         <div className="slider-post post-height-2">
                                             <Link href="#" className="news-image">
-                                                <img
+                                              <Image
                                                     src="assets/images/slider-260x230-10.jpg"
                                                     alt=""
                                                     className="img-fluid"
@@ -167,7 +168,7 @@ const page = () => {
                                                 <figure className="posts-thumb">
                                                     <span className="post-category">National</span>
                                                     <Link href="#">
-                                                        <img src="assets/images/378x270-1.jpg" alt="" />
+                                                      <Image src="assets/images/378x270-1.jpg" alt="" />
                                                     </Link>
                                                 </figure>
                                                 <div className="posts-inner">
@@ -199,7 +200,7 @@ const page = () => {
                                                 <div className="posts__footer card__footer">
                                                     <div className="post-author">
                                                         <figure className="d-md-inline-block d-none post-author-avatar">
-                                                            <img
+                                                          <Image
                                                                 src="assets/images/avatar-1.jpg"
                                                                 alt="Post Author Avatar"
                                                             />
@@ -233,7 +234,7 @@ const page = () => {
                                                 <figure className="posts-thumb">
                                                     <span className="post-category">Tavel</span>
                                                     <Link href="#">
-                                                        <img src="assets/images/378x270-2.jpg" alt="" />
+                                                      <Image src="assets/images/378x270-2.jpg" alt="" />
                                                     </Link>
                                                 </figure>
                                                 <div className="posts-inner">
@@ -265,7 +266,7 @@ const page = () => {
                                                 <div className="posts__footer card__footer">
                                                     <div className="post-author">
                                                         <figure className="d-md-inline-block d-none post-author-avatar">
-                                                            <img
+                                                          <Image
                                                                 src="assets/images/avatar-1.jpg"
                                                                 alt="Post Author Avatar"
                                                             />
@@ -299,7 +300,7 @@ const page = () => {
                                                 <figure className="posts-thumb">
                                                     <span className="post-category">Fashion</span>
                                                     <Link href="#">
-                                                        <img src="assets/images/378x270-3.jpg" alt="" />
+                                                      <Image src="assets/images/378x270-3.jpg" alt="" />
                                                     </Link>
                                                 </figure>
                                                 <div className="posts-inner">
@@ -331,7 +332,7 @@ const page = () => {
                                                 <div className="posts__footer card__footer">
                                                     <div className="post-author">
                                                         <figure className="d-md-inline-block d-none post-author-avatar">
-                                                            <img
+                                                          <Image
                                                                 src="assets/images/avatar-1.jpg"
                                                                 alt="Post Author Avatar"
                                                             />
@@ -365,7 +366,7 @@ const page = () => {
                                                 <figure className="posts-thumb">
                                                     <span className="post-category">Technology</span>
                                                     <Link href="#">
-                                                        <img src="assets/images/378x270-4.jpg" alt="" />
+                                                      <Image src="assets/images/378x270-4.jpg" alt="" />
                                                     </Link>
                                                 </figure>
                                                 <div className="posts-inner">
@@ -397,7 +398,7 @@ const page = () => {
                                                 <div className="posts__footer card__footer">
                                                     <div className="post-author">
                                                         <figure className="d-md-inline-block d-none post-author-avatar">
-                                                            <img
+                                                          <Image
                                                                 src="assets/images/avatar-1.jpg"
                                                                 alt="Post Author Avatar"
                                                             />
@@ -431,7 +432,7 @@ const page = () => {
                                                 <figure className="posts-thumb">
                                                     <span className="post-category">Photography</span>
                                                     <Link href="#">
-                                                        <img src="assets/images/378x270-5.jpg" alt="" />
+                                                      <Image src="assets/images/378x270-5.jpg" alt="" />
                                                     </Link>
                                                 </figure>
                                                 <div className="posts-inner">
@@ -463,7 +464,7 @@ const page = () => {
                                                 <div className="posts__footer card__footer">
                                                     <div className="post-author">
                                                         <figure className="d-md-inline-block d-none post-author-avatar">
-                                                            <img
+                                                          <Image
                                                                 src="assets/images/avatar-1.jpg"
                                                                 alt="Post Author Avatar"
                                                             />
@@ -497,7 +498,7 @@ const page = () => {
                                                 <figure className="posts-thumb">
                                                     <span className="post-category">Business</span>
                                                     <Link href="#">
-                                                        <img src="assets/images/378x270-6.jpg" alt="" />
+                                                      <Image src="assets/images/378x270-6.jpg" alt="" />
                                                     </Link>
                                                 </figure>
                                                 <div className="posts-inner">
@@ -529,7 +530,7 @@ const page = () => {
                                                 <div className="posts__footer card__footer">
                                                     <div className="post-author">
                                                         <figure className="d-md-inline-block d-none post-author-avatar">
-                                                            <img
+                                                          <Image
                                                                 src="assets/images/avatar-1.jpg"
                                                                 alt="Post Author Avatar"
                                                             />
@@ -622,7 +623,7 @@ const page = () => {
                                 {/* END OF /. SOCIAL ICON */}
                                 {/* START ADVERTISEMENT */}
                                 <div className="add-inner">
-                                    <img
+                                  <Image
                                         src="assets/images/add320x270-1.jpg"
                                         className="img-fluid"
                                         alt=""
@@ -691,7 +692,7 @@ const page = () => {
                                                         <span className="count">03</span>
                                                         <span className="text">
                                                             <Link href="#">
-                                                                BCCI asks ECB to bear expenses of team's India tour
+                                                                BCCI asks ECB to bear expenses of team s India tour
                                                             </Link>
                                                         </span>
                                                     </li>

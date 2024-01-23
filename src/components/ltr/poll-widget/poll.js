@@ -34,7 +34,7 @@ useEffect(() => {
 
 data.slice(0,1).map((res)=>(
 
-    <div className="panel_inner poll-widget">
+    <div className="panel_inner poll-widget" key={res.news_id}>
     <div className="panel_header">
         <h4>
             <strong>{res.category}</strong>

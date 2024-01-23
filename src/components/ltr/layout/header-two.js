@@ -4,7 +4,7 @@ import axios from 'axios';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
-
+import Image from 'next/image';
 
 const HomeLinks = [
     { href: '/', text: 'Home – Layout 1', badge: 'NEW' },
@@ -147,12 +147,12 @@ const HeaderTwo = () => {
                     <div className="align-items-center row">
                         <div className="col-sm-4">
                             <Link href="/">
-                                <img
+                               <Image
                                     src="assets/images/logo.png"
                                     className="img-fluid header-logo header-logo_dark"
                                     alt=""
                                 />
-                                <img
+                               <Image
                                     src="assets/images/logo-white.png"
                                     className="img-fluid header-logo_white"
                                     alt=""
@@ -161,7 +161,7 @@ const HeaderTwo = () => {
                         </div>
                         <div className="col-sm-8">
                             <Link href="#">
-                                <img
+                               <Image
                                     src="assets/images/add728x90-1.jpg"
                                     className="img-fluid"
                                     alt=""
@@ -205,13 +205,13 @@ const HeaderTwo = () => {
                 <div className="container position-relative">
                     {/* Start Navbar Brand*/}
                     <Link className="navbar-brand d-md-none" href="/">
-                        {/* <img class="logo-dark" src="assets/images/logo.png" alt=""> */}
-                        <img
+                        {/*<Image class="logo-dark" src="assets/images/logo.png" alt=""> */}
+                       <Image
                             src="assets/images/logo.png"
                             className="header-logo_dark"
                             alt=""
                         />
-                        <img
+                       <Image
                             src="assets/images/logo-white.png"
                             className="header-logo_white"
                             alt=""
@@ -250,14 +250,14 @@ const HeaderTwo = () => {
                             {/* Start Brand Logo For Mobile */}
                             <div className="collapse-brand flex-shrink-0">
                                 <Link href="/">
-                                    <img
+                                   <Image
                                         src="assets/images/logo.png"
                                         className="header-logo_dark"
                                         alt=""
                                     />
                                 </Link>
                                 <Link href="/">
-                                    <img
+                                   <Image
                                         src="assets/images/logo-white.png"
                                         className="header-logo_white"
                                         alt=""
@@ -297,7 +297,7 @@ const HeaderTwo = () => {
                             ))}
 
                             {uniqueCategories?.map((res) => (
-                                <li
+                                <li key={res.news_id}
                                     onClick={() =>
                                         router.push(`/detailPage/${res}`)
                                         // router.push(`detailPage/${res}`)

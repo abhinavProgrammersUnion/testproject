@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import 'animate.css/animate.css'
-
+import Image from 'next/image';
 if (typeof window !== "undefined") {
     window.$ = window.jQuery = require("jquery");
 }
@@ -35,7 +35,7 @@ const PopularPostCarousalTwo = () => {
                     <article>
                         <figure>
                             <a href="">
-                                <img
+                               <Image
                                     src="assets/images/340x215-1.jpg"
                                     height={242}
                                     width={345}
@@ -75,7 +75,7 @@ const PopularPostCarousalTwo = () => {
                         <div className="news-list-item">
                             <div className="img-wrapper">
                                 <a href="#" className="thumb">
-                                    <img
+                                   <Image
                                         src="assets/images/115x85-1.jpg"
                                         alt=""
                                         className="img-fluid"
@@ -107,7 +107,7 @@ const PopularPostCarousalTwo = () => {
                         <div className="news-list-item">
                             <div className="img-wrapper">
                                 <a href="#" className="thumb">
-                                    <img
+                                   <Image
                                         src="assets/images/115x85-2.jpg"
                                         alt=""
                                         className="img-fluid"
@@ -142,7 +142,7 @@ const PopularPostCarousalTwo = () => {
                     <article>
                         <figure>
                             <a href="">
-                                <img
+                               <Image
                                     src="assets/images/340x215-6.jpg"
                                     height={242}
                                     width={345}
@@ -182,7 +182,7 @@ const PopularPostCarousalTwo = () => {
                         <div className="news-list-item">
                             <div className="img-wrapper">
                                 <a href="#" className="thumb">
-                                    <img
+                                   <Image
                                         src="assets/images/115x85-1.jpg"
                                         alt=""
                                         className="img-fluid"
@@ -214,7 +214,7 @@ const PopularPostCarousalTwo = () => {
                         <div className="news-list-item">
                             <div className="img-wrapper">
                                 <a href="#" className="thumb">
-                                    <img
+                                   <Image
                                         src="assets/images/115x85-2.jpg"
                                         alt=""
                                         className="img-fluid"
@@ -254,7 +254,7 @@ const PopularPostCarousalTwo = () => {
                     <article>
                         <figure>
                             <a href="">
-                                <img
+                               <Image
                                     src="assets/images/340x215-7.jpg"
                                     height={242}
                                     width={345}
@@ -294,7 +294,7 @@ const PopularPostCarousalTwo = () => {
                         <div className="news-list-item">
                             <div className="img-wrapper">
                                 <a href="#" className="thumb">
-                                    <img
+                                   <Image
                                         src="assets/images/115x85-1.jpg"
                                         alt=""
                                         className="img-fluid"
@@ -326,7 +326,7 @@ const PopularPostCarousalTwo = () => {
                         <div className="news-list-item">
                             <div className="img-wrapper">
                                 <a href="#" className="thumb">
-                                    <img
+                                   <Image
                                         src="assets/images/115x85-2.jpg"
                                         alt=""
                                         className="img-fluid"
@@ -361,7 +361,7 @@ const PopularPostCarousalTwo = () => {
                     <article>
                         <figure>
                             <a href="">
-                                <img
+                               <Image
                                     src="assets/images/340x215-8.jpg"
                                     height={242}
                                     width={345}
@@ -403,7 +403,7 @@ const PopularPostCarousalTwo = () => {
                         <div className="news-list-item">
                             <div className="img-wrapper">
                                 <a href="#" className="thumb">
-                                    <img
+                                   <Image
                                         src="assets/images/115x85-1.jpg"
                                         alt=""
                                         className="img-fluid"
@@ -435,7 +435,7 @@ const PopularPostCarousalTwo = () => {
                         <div className="news-list-item">
                             <div className="img-wrapper">
                                 <a href="#" className="thumb">
-                                    <img
+                                   <Image
                                         src="assets/images/115x85-2.jpg"
                                         alt=""
                                         className="img-fluid"

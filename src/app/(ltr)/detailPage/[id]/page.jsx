@@ -4,16 +4,17 @@ import LayoutTwo from '@/components/ltr/layout/layout-two';
 import LeftCarousal from '@/components/ltr/left-carousal/left-carousal';
 import useRemoveBodyClass from '@/components/ltr/useEffect-hook/useEffect-hook';
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
+import React, { UseEffect, UseState } from 'react';
 import StickyBox from 'react-sticky-box';
 import axios from 'axios'
-import { usePathname } from 'next/navigation';
+import { UsePathname } from 'next/navigation';
+import Image from 'next/image';
 const page = () => {
 
-  const [fetch, setFetch] = useState([])
+  const [fetch, setFetch] = UseState([])
 
 
-  const pathname = usePathname();
+  const pathname = UsePathname();
 
   const pathnamedata = pathname.split('/').slice(2, 4);
 
@@ -34,7 +35,7 @@ const page = () => {
 
 
 
-  useEffect(() => {
+  UseEffect(() => {
     fetchedData()
   }, [])
 
@@ -78,13 +79,13 @@ const page = () => {
                   <div className="post-body">
 
                     {filteredData.map((item) =>
-                      <div className="row row-m">
+                      <div className="row row-m" key={item.news_id}>
                         <div className="col-md-6 col-p">
                           <article>
                             <figure>
                               <a href="">
 
-                                <img
+                               <Image
                                   src={item.image_path}
                                   height={242}
                                   width={345}
@@ -118,7 +119,7 @@ const page = () => {
                           <article>
                             <figure>
                               <a href="">
-                                <img
+                               <Image
                                   src={item.image_path}
                                   height={242}
                                   width={345}
@@ -254,7 +255,7 @@ const page = () => {
                 {/* END OF /. SOCIAL ICON */}
                 {/* START ADVERTISEMENT */}
                 <div className="add-inner">
-                  <img
+                 <Image
                     src="assets/images/add320x270-1.jpg"
                     className="img-fluid"
                     alt=""
@@ -323,7 +324,7 @@ const page = () => {
                             <span className="count">03</span>
                             <span className="text">
                               <a href="#">
-                                BCCI asks ECB to bear expenses of team's India tour
+                                BCCI asks ECB to bear expenses of team s India tour
                               </a>
                             </span>
                           </li>

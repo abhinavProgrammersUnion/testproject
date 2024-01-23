@@ -1,13 +1,14 @@
 "use client"
 
 import LayoutTwo from '@/components/ltr/layout/layout-two';
-import { useBackgroundImageLoader } from '@/components/ltr/use-background-image/use-background-image';
-import useRemoveBodyClass from '@/components/ltr/useEffect-hook/useEffect-hook';
+import { UseBackgroundImageLoader } from '@/components/ltr/use-background-image/use-background-image';
+import UseRemoveBodyClass from '@/components/ltr/useEffect-hook/useEffect-hook';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const page = () => {
-    useRemoveBodyClass(['None'], ['home-seven', 'home-nine','boxed-layout','home-six','home-two']);
-    useBackgroundImageLoader()
+    UseRemoveBodyClass(['None'], ['home-seven', 'home-nine','boxed-layout','home-six','home-two']);
+    UseBackgroundImageLoader()
     return (
         <LayoutTwo>
             {/* *** START PAGE MAIN CONTENT *** */}
@@ -49,7 +50,7 @@ const page = () => {
                             </h3>
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum has been the industry's standard dummy text
+                                industry. Lorem Ipsum has been the industrys standard dummy text
                                 ever since the 1500s, when an unknown printer took a galley of type
                                 and scrambled it to make a type specimen book. It has survived not
                                 only five centuries, but also the leap into electronic typesetting,
@@ -60,7 +61,7 @@ const page = () => {
                             </p>
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum has been the industry's standard dummy text
+                                industry. Lorem Ipsum has been the industrys standard dummy text
                                 ever since the 1500s, when an unknown printer took a galley of type
                                 and scrambled it to make a type specimen book. It has survived not
                                 only five .
@@ -74,7 +75,7 @@ const page = () => {
                             <div className="col-6 col-md-3">
                                 <figure className="member">
                                     {" "}
-                                    <img
+                                    <Image
                                         src="assets/images/team/1.png"
                                         className="img-fluid"
                                         alt="Image"
@@ -112,7 +113,7 @@ const page = () => {
                             <div className="col-6 col-md-3">
                                 <figure className="member">
                                     {" "}
-                                    <img
+                                    <Image
                                         src="assets/images/team/2.png"
                                         className="img-fluid"
                                         alt="Image"
@@ -150,13 +151,13 @@ const page = () => {
                             <div className="col-6 col-md-3">
                                 <figure className="member">
                                     {" "}
-                                    <img
+                                    <Image
                                         src="assets/images/team/3.png"
                                         className="img-fluid"
                                         alt="Image"
                                     />
                                     <figcaption>
-                                        <h4>Chris O'Daniel</h4>
+                                        <h4>Chris O Daniel</h4>
                                         <small>Publisher</small>
                                         <ul>
                                             <li>
@@ -188,7 +189,7 @@ const page = () => {
                             <div className="col-6 col-md-3">
                                 <figure className="member">
                                     {" "}
-                                    <img
+                                    <Image
                                         src="assets/images/team/4.png"
                                         className="img-fluid"
                                         alt="Image"
@@ -229,7 +230,7 @@ const page = () => {
                             <h2>Bold History that Fuels the Future</h2>
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum has been the industry's standard dummy text
+                                industry. Lorem Ipsum has been the industrys standard dummy text
                                 ever since the 1500s, when an unknown printer took a galley of type
                                 and scrambled it to make a type specimen book. It has survived not
                                 only five centuries, but also the leap into electronic typesetting,
@@ -240,7 +241,7 @@ const page = () => {
                             </p>
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum has been the industry's standard dummy text
+                                industry. Lorem Ipsum has been the industrys standard dummy text
                                 ever since the 1500s, when an unknown printer took a galley of type
                                 and scrambled it to make a type specimen book. It has survived not
                                 only five centuries, but also the leap into electronic typesetting,
@@ -257,7 +258,7 @@ const page = () => {
                                     <div className="grid-item">
                                         <div className="grid-item-img">
                                             <Link href="#">
-                                                <img
+                                                <Image
                                                     src="assets/images/218x150-1.jpg"
                                                     className="img-fluid"
                                                     alt=""
@@ -286,7 +287,7 @@ const page = () => {
                                     <div className="grid-item">
                                         <div className="grid-item-img">
                                             <Link href="#">
-                                                <img
+                                                <Image
                                                     src="assets/images/218x150-2.jpg"
                                                     className="img-fluid"
                                                     alt=""
@@ -316,7 +317,7 @@ const page = () => {
                                     <div className="grid-item">
                                         <div className="grid-item-img">
                                             <Link href="#">
-                                                <img
+                                                <Image
                                                     src="assets/images/218x150-3.jpg"
                                                     className="img-fluid"
                                                     alt=""
@@ -345,7 +346,7 @@ const page = () => {
                                     <div className="grid-item">
                                         <div className="grid-item-img">
                                             <Link href="#">
-                                                <img
+                                                <Image
                                                     src="assets/images/218x150-4.jpg"
                                                     className="img-fluid"
                                                     alt=""

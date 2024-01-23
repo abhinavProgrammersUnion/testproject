@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import 'animate.css/animate.css'
-
+import Image from 'next/image';
 
 if (typeof window !== "undefined") {
     window.$ = window.jQuery = require("jquery");
@@ -37,7 +37,7 @@ const TravelSlider = () => {
                     <article>
                         <figure>
                             <a href="">
-                                <img
+                               <Image
                                     src="assets/images/340x215-3.jpg"
                                     height={242}
                                     width={345}
@@ -81,7 +81,7 @@ const TravelSlider = () => {
                                 <div className="grid-item">
                                     <div className="grid-item-img">
                                         <a href="#">
-                                            <img
+                                           <Image
                                                 src="assets/images/165x110-1.jpg"
                                                 className="img-fluid"
                                                 alt=""
@@ -109,7 +109,7 @@ const TravelSlider = () => {
                                 <div className="grid-item">
                                     <div className="grid-item-img">
                                         <a href="#">
-                                            <img
+                                           <Image
                                                 src="assets/images/165x110-2.jpg"
                                                 className="img-fluid"
                                                 alt=""
@@ -137,7 +137,7 @@ const TravelSlider = () => {
                                 <div className="grid-item">
                                     <div className="grid-item-img">
                                         <a href="#">
-                                            <img
+                                           <Image
                                                 src="assets/images/165x110-3.jpg"
                                                 className="img-fluid"
                                                 alt=""
@@ -165,7 +165,7 @@ const TravelSlider = () => {
                                 <div className="grid-item">
                                     <div className="grid-item-img">
                                         <a href="#">
-                                            <img
+                                           <Image
                                                 src="assets/images/165x110-4.jpg"
                                                 className="img-fluid"
                                                 alt=""
@@ -201,7 +201,7 @@ const TravelSlider = () => {
                     <article>
                         <figure>
                             <a href="">
-                                <img
+                               <Image
                                     src="assets/images/340x215-4.jpg"
                                     height={242}
                                     width={345}
@@ -245,7 +245,7 @@ const TravelSlider = () => {
                                 <div className="grid-item">
                                     <div className="grid-item-img">
                                         <a href="#">
-                                            <img
+                                           <Image
                                                 src="assets/images/165x110-5.jpg"
                                                 className="img-fluid"
                                                 alt=""
@@ -273,7 +273,7 @@ const TravelSlider = () => {
                                 <div className="grid-item">
                                     <div className="grid-item-img">
                                         <a href="#">
-                                            <img
+                                           <Image
                                                 src="assets/images/165x110-6.jpg"
                                                 className="img-fluid"
                                                 alt=""
@@ -301,7 +301,7 @@ const TravelSlider = () => {
                                 <div className="grid-item">
                                     <div className="grid-item-img">
                                         <a href="#">
-                                            <img
+                                           <Image
                                                 src="assets/images/165x110-7.jpg"
                                                 className="img-fluid"
                                                 alt=""
@@ -329,7 +329,7 @@ const TravelSlider = () => {
                                 <div className="grid-item">
                                     <div className="grid-item-img">
                                         <a href="#">
-                                            <img
+                                           <Image
                                                 src="assets/images/165x110-8.jpg"
                                                 className="img-fluid"
                                                 alt=""

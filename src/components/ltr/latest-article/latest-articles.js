@@ -1,4 +1,4 @@
-
+import Image from 'next/image';
 
 const LatestArticles = () => {
     return (
@@ -14,7 +14,7 @@ const LatestArticles = () => {
             <div className="news-list-item articles-list">
                 <div className="img-wrapper">
                     <a href="#" className="thumb">
-                        <img
+                      <Image
                             src="assets/images/218x150-1.jpg"
                             alt=""
                             className="img-fluid w-100 object-fit-cover"
@@ -42,7 +42,7 @@ const LatestArticles = () => {
                     <p className="d-lg-block d-none">
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
+                        industrys standard dummy text ever since the 1500s,
                         when an unknown printer took a galley...
                     </p>
                 </div>
@@ -50,7 +50,7 @@ const LatestArticles = () => {
             <div className="news-list-item articles-list">
                 <div className="img-wrapper">
                     <a href="#" className="thumb">
-                        <img
+                      <Image
                             src="assets/images/218x150-2.jpg"
                             alt=""
                             className="img-fluid w-100 object-fit-cover"
@@ -78,7 +78,7 @@ const LatestArticles = () => {
                     <p className="d-lg-block d-none">
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
+                        industrys standard dummy text ever since the 1500s,
                         when an unknown printer took a galley...
                     </p>
                 </div>
@@ -86,7 +86,7 @@ const LatestArticles = () => {
             <div className="news-list-item articles-list">
                 <div className="img-wrapper">
                     <a href="#" className="thumb">
-                        <img
+                      <Image
                             src="assets/images/218x150-3.jpg"
                             alt=""
                             className="img-fluid w-100 object-fit-cover"
@@ -114,7 +114,7 @@ const LatestArticles = () => {
                     <p className="d-lg-block d-none">
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
+                        industry s standard dummy text ever since the 1500s,
                         when an unknown printer took a galley...
                     </p>
                 </div>
@@ -122,7 +122,7 @@ const LatestArticles = () => {
             <div className="news-list-item articles-list">
                 <div className="img-wrapper">
                     <a href="#" className="thumb">
-                        <img
+                      <Image
                             src="assets/images/218x150-4.jpg"
                             alt=""
                             className="img-fluid w-100 object-fit-cover"
@@ -150,7 +150,7 @@ const LatestArticles = () => {
                     <p className="d-lg-block d-none">
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
+                        industry s standard dummy text ever since the 1500s,
                         when an unknown printer took a galley...
                     </p>
                 </div>
@@ -158,7 +158,7 @@ const LatestArticles = () => {
             <div className="news-list-item articles-list">
                 <div className="img-wrapper">
                     <a href="#" className="thumb">
-                        <img
+                      <Image
                             src="assets/images/340x215-1.jpg"
                             alt=""
                             className="img-fluid w-100 object-fit-cover"
@@ -186,7 +186,7 @@ const LatestArticles = () => {
                     <p className="d-lg-block d-none">
                         Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
+                        industry s standard dummy text ever since the 1500s,
                         when an unknown printer took a galley...
                     </p>
                 </div>

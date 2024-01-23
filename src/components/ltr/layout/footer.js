@@ -4,6 +4,7 @@ import ScrollToTopUI from '../scroll-to-top/scroll-to-top';
 import { useBackgroundImageLoader } from '../use-background-image/use-background-image';
 import axios from 'axios';
 import {useEffect,useState} from 'react'
+import Image from 'next/image';
 const Footer = () => {
 
   const [data,setData]=useState()
@@ -38,7 +39,7 @@ fetchData()
         <div className="container position-relative z-1">
           <div className="g-3 row">
             <div className="col-md-3">
-              <img
+            <Image
                 src="assets/images/logo-white.png"
                 alt="footer logo"
                 className="img-fluid"
@@ -77,7 +78,7 @@ fetchData()
                 <h5 className="wiget-title">Get My App</h5>
                 <div className="bg-white mb-3 d-inline-block">
                   Start Qr Code Image
-                  <img
+                <Image
                     src="assets/images/qr-code.png"
                     className="figure-img img-fluid mb-0"
                     height={146}
@@ -128,7 +129,7 @@ fetchData()
 
 {
 data?.slice(0,8).map((res)=>(
-  <ul className="list-unstyled m-0 menu-services">
+  <ul className="list-unstyled m-0 menu-services" key={res.news_id}>
   <li>
     <a href="#">{res.category}</a>
   </li>
@@ -173,12 +174,12 @@ data?.slice(0,8).map((res)=>(
   data?.slice(0,3).map((res)=>(
 
 
-    <div className="news-list-item">
+    <div className="news-list-item" key={res.news_id}>
 
 
     <div className="img-wrapper">
       <a href="#" className="thumb">
-        <img
+      <Image
           src={res.image_path}
           alt="image"
           className="img-fluid"

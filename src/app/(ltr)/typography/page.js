@@ -2,13 +2,13 @@
 "use client"
 
 import LayoutTwo from "@/components/ltr/layout/layout-two";
-import useRemoveBodyClass from "@/components/ltr/useEffect-hook/useEffect-hook";
+import UseRemoveBodyClass from "@/components/ltr/useEffect-hook/useEffect-hook";
 import Link from "next/link";
 import StickyBox from "react-sticky-box";
-
+import Image from 'next/image';
 
 const page = () => {
-    useRemoveBodyClass(['None'], ['home-seven', 'home-nine', 'boxed-layout', 'home-six', 'home-two']);
+    UseRemoveBodyClass(['None'], ['home-seven', 'home-nine', 'boxed-layout', 'home-six', 'home-two']);
     return (
         <LayoutTwo>
             {/* *** START PAGE MAIN CONTENT *** */}
@@ -257,22 +257,22 @@ const page = () => {
                                                 <div className="col-sm-6">
                                                     <h3>Contextual Text Colors</h3>
                                                     <p className="text-muted">
-                                                        This paragraph is styled with class "text-muted".
+                                                        This paragraph is styled with class text-muted.
                                                     </p>
                                                     <p className="text-primary">
-                                                        This paragraph is styled with class "text-primary".
+                                                        This paragraph is styled with class text-primary.
                                                     </p>
                                                     <p className="text-success">
-                                                        This paragraph is styled with class "text-success".
+                                                        This paragraph is styled with class text-success.
                                                     </p>
                                                     <p className="text-info">
-                                                        This paragraph is styled with class "text-info".
+                                                        This paragraph is styled with class text-info.
                                                     </p>
                                                     <p className="text-warning">
-                                                        This paragraph is styled with class "text-warning".
+                                                        This paragraph is styled with class text-warning.
                                                     </p>
                                                     <p className="text-danger">
-                                                        This paragraph is styled with class "text-danger".
+                                                        This paragraph is styled with class text-danger.
                                                     </p>
                                                 </div>
                                             </div>
@@ -318,7 +318,7 @@ const page = () => {
                             <StickyBox>
                                 {/* START ADVERTISEMENT */}
                                 <div className="add-inner">
-                                    <img
+                                    <Image
                                         src="assets/images/add320x270-1.jpg"
                                         className="img-fluid"
                                         alt=""
@@ -442,7 +442,7 @@ const page = () => {
                                                         <span className="count">03</span>
                                                         <span className="text">
                                                             <a href="#">
-                                                                BCCI asks ECB to bear expenses of team's India tour
+                                                                BCCI asks ECB to bear expenses of teams India tour
                                                             </a>
                                                         </span>
                                                     </li>

@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import 'animate.css/animate.css'
-
+import Image from 'next/image';
 if (typeof window !== "undefined") {
     window.$ = window.jQuery = require("jquery");
 }
@@ -34,7 +34,7 @@ const LeftCarousalThree = () => {
         <div className="item">
           <div className="slider-post post-height-1">
             <a href="#" className="news-image">
-              <img
+             <Image
                 src="assets/images/slider-520x460-7.jpg"
                 alt=""
                 className="img-fluid"
@@ -65,7 +65,7 @@ const LeftCarousalThree = () => {
         <div className="item">
           <div className="slider-post post-height-1">
             <a href="#" className="news-image">
-              <img
+             <Image
                 src="assets/images/slider-520x460-2.jpg"
                 alt=""
                 className="img-fluid"
@@ -96,7 +96,7 @@ const LeftCarousalThree = () => {
         <div className="item">
           <div className="slider-post post-height-1">
             <a href="#" className="news-image">
-              <img
+             <Image
                 src="assets/images/slider-520x460-3.jpg"
                 alt=""
                 className="img-fluid"
@@ -127,7 +127,7 @@ const LeftCarousalThree = () => {
         <div className="item">
           <div className="slider-post post-height-1">
             <a href="#" className="news-image">
-              <img
+             <Image
                 src="assets/images/slider-520x460-4.jpg"
                 alt=""
                 className="img-fluid"
@@ -158,7 +158,7 @@ const LeftCarousalThree = () => {
         <div className="item">
           <div className="slider-post post-height-1">
             <a href="#" className="news-image">
-              <img
+             <Image
                 src="assets/images/slider-520x460-5.jpg"
                 alt=""
                 className="img-fluid"
@@ -170,7 +170,7 @@ const LeftCarousalThree = () => {
                 <a href="#">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the
-                  industry's standard{" "}
+                  industry s standard{" "}
                 </a>
               </h2>
               <ul className="authar-info d-flex flex-wrap">

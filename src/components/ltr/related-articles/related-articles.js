@@ -5,6 +5,7 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import 'animate.css/animate.css'
 import Link from "next/link";
+import Image from 'next/image';
 
 if (typeof window !== "undefined") {
     window.$ = window.jQuery = require("jquery");
@@ -38,7 +39,7 @@ const RelatedArticles = () => {
                             <div className="grid-item">
                                 <div className="grid-item-img">
                                     <Link href="#">
-                                        <img
+                                      <Image
                                             src="assets/images/218x150-1.jpg"
                                             className="img-fluid"
                                             alt=""
@@ -68,7 +69,7 @@ const RelatedArticles = () => {
                             <div className="grid-item">
                                 <div className="grid-item-img">
                                     <Link href="#">
-                                        <img
+                                      <Image
                                             src="assets/images/218x150-2.jpg"
                                             className="img-fluid"
                                             alt=""
@@ -98,7 +99,7 @@ const RelatedArticles = () => {
                             <div className="grid-item">
                                 <div className="grid-item-img">
                                     <Link href="#">
-                                        <img
+                                      <Image
                                             src="assets/images/218x150-3.jpg"
                                             className="img-fluid"
                                             alt=""
@@ -135,7 +136,7 @@ const RelatedArticles = () => {
                             <div className="grid-item">
                                 <div className="grid-item-img">
                                     <Link href="#">
-                                        <img
+                                      <Image
                                             src="assets/images/218x150-4.jpg"
                                             className="img-fluid"
                                             alt=""
@@ -165,7 +166,7 @@ const RelatedArticles = () => {
                             <div className="grid-item">
                                 <div className="grid-item-img">
                                     <Link href="#">
-                                        <img
+                                      <Image
                                             src="assets/images/218x150-2.jpg"
                                             className="img-fluid"
                                             alt=""
@@ -195,7 +196,7 @@ const RelatedArticles = () => {
                             <div className="grid-item">
                                 <div className="grid-item-img">
                                     <Link href="#">
-                                        <img
+                                      <Image
                                             src="assets/images/218x150-1.jpg"
                                             className="img-fluid"
                                             alt=""

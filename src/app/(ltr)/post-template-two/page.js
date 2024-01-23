@@ -2,13 +2,13 @@
 
 import LayoutTwo from "@/components/ltr/layout/layout-two";
 import RelatedArticles from "@/components/ltr/related-articles/related-articles";
-import useRemoveBodyClass from "@/components/ltr/useEffect-hook/useEffect-hook";
+import UseRemoveBodyClass from "@/components/ltr/useEffect-hook/useEffect-hook";
 import Link from "next/link";
 import StickyBox from "react-sticky-box";
-
+import Image from 'next/image';
 
 const page = () => {
-    useRemoveBodyClass(['None'], ['home-seven', 'home-nine','boxed-layout','home-six','home-two']);
+    UseRemoveBodyClass(['None'], ['home-seven', 'home-nine','boxed-layout','home-six','home-two']);
     return (
         <LayoutTwo>
             {/* *** START PAGE MAIN CONTENT *** */}
@@ -77,7 +77,7 @@ const page = () => {
                                             </ul>
                                         </div>
                                         <figure className="social-icon">
-                                            <img
+                                            <Image
                                                 src="assets/images/details-690x460-2.jpg"
                                                 className="img-fluid"
                                                 alt=""
@@ -104,13 +104,13 @@ const page = () => {
                                             It is a long established fact that a reader will be distracted
                                             by the readable content of a page when looking at its layout.
                                             The point of using Lorem Ipsum is that it has a more-or-less
-                                            normal distribution of letters, as opposed to using 'Content
-                                            here, content here', making it look like readable English.
+                                            normal distribution of letters, as opposed to using Content
+                                            here, content here, making it look like readable English.
                                             Many desktop publishing packages and web page editors now use
                                             Lorem Ipsum as their default model text, and a search for
-                                            'lorem ipsum' will uncover many web sites still in their
+                                            lorem ipsum will uncover many web sites still in their
                                             infancy. Various versions have evolved over the years,
-                                            sometimes by accident, sometimes on purpose (injected humour
+                                            sometimes by accident sometimes on purpose (injected humour
                                             and the like).
                                         </p>
                                         <div className="article_comment">
@@ -128,11 +128,11 @@ const page = () => {
                                             It is a long established fact that a reader will be distracted
                                             by the readable content of a page when looking at its layout.
                                             The point of using Lorem Ipsum is that it has a more-or-less
-                                            normal distribution of letters, as opposed to using 'Content
-                                            here, content here', making it look like readable English.
+                                            normal distribution of letters, as opposed to using Content
+                                            here, content here, making it look like readable English.
                                             Many desktop publishing packages and web page editors now use
-                                            Lorem Ipsum as their default model text, and a search for
-                                            'lorem ipsum' will uncover many web.
+                                            Lorem Ipsum as their default model text and a search for
+                                            lorem ipsum will uncover many web.
                                         </p>
                                         <h3>The most beautiful people we have known are those:</h3>
                                         <ul className="dot-list">
@@ -145,7 +145,7 @@ const page = () => {
                                         </ul>
                                         <p>
                                             Lorem Ipsum is simply dummy text of the printing and
-                                            typesetting industry. Lorem Ipsum has been the industry's
+                                            typesetting industry. Lorem Ipsum has been the industrys
                                             standard dummy text ever since the 1500s, when an unknown
                                             printer took a galley of type and scrambled it to make a type
                                             specimen book. It has survived not only five centuries, but
@@ -153,7 +153,7 @@ const page = () => {
                                             essentially unchanged.
                                         </p>
                                         <div className="adaptive">
-                                            <img
+                                            <Image
                                                 src="assets/images/details-690x380-1.jpg"
                                                 alt=""
                                                 className="img-fluid "
@@ -166,9 +166,9 @@ const page = () => {
                                         <p>
                                             There are many variations of passages of Lorem Ipsum
                                             available, but the majority have suffered alteration in some
-                                            form, by injected humour, or randomised words which don't look
+                                            form, by injected humour, or randomised words which dont look
                                             even slightly believable. If you are going to use a passage of
-                                            Lorem Ipsum, you need to be sure there isn't anything
+                                            Lorem Ipsum, you need to be sure there isn t anything
                                             embarrassing hidden in the middle of text. All the Lorem Ipsum
                                             generators on the Internet tend to repeat predefined chunks as
                                             necessary, making this the first true generator on the
@@ -188,11 +188,11 @@ const page = () => {
                                             It is a long established fact that a reader will be distracted
                                             by the readable content of a page when looking at its layout.
                                             The point of using Lorem Ipsum is that it has a more-or-less
-                                            normal distribution of letters, as opposed to using 'Content
-                                            here, content here', making it look like readable English.
+                                            normal distribution of letters, as opposed to using Content
+                                            here, content here, making it look like readable English.
                                             Many desktop publishing packages and web page editors now use
                                             Lorem Ipsum as their default model text, and a search for
-                                            'lorem ipsum' will uncover many web sites still in their
+                                            lorem ipsum will uncover many web sites still in their
                                             infancy. Various versions have evolved over the years,
                                             sometimes by accident, sometimes on purpose (injected humour
                                             and the like).
@@ -299,7 +299,7 @@ const page = () => {
                                             <div className="comment-main-level">
                                                 {/* Avatar */}
                                                 <div className="comment-avatar">
-                                                    <img src="assets/images/avatar-1.jpg" alt="" />
+                                                    <Image src="assets/images/avatar-1.jpg" alt="" />
                                                 </div>
                                                 <div className="comment-box">
                                                     <div className="comment-content">
@@ -331,7 +331,7 @@ const page = () => {
                                                 <li>
                                                     {/* Avatar */}
                                                     <div className="comment-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="" />
+                                                        <Image src="assets/images/avatar-1.jpg" alt="" />
                                                     </div>
                                                     <div className="comment-box">
                                                         <div className="comment-content">
@@ -362,7 +362,7 @@ const page = () => {
                                                 <li>
                                                     {/* Avatar */}
                                                     <div className="comment-avatar">
-                                                        <img src="assets/images/avatar-1.jpg" alt="" />
+                                                        <Image src="assets/images/avatar-1.jpg" alt="" />
                                                     </div>
                                                     <div className="comment-box">
                                                         <div className="comment-content">
@@ -396,7 +396,7 @@ const page = () => {
                                             <div className="comment-main-level">
                                                 {/* Avatar */}
                                                 <div className="comment-avatar">
-                                                    <img src="assets/images/avatar-1.jpg" alt="" />
+                                                    <Image src="assets/images/avatar-1.jpg" alt="" />
                                                 </div>
                                                 <div className="comment-box">
                                                     <div className="comment-content">
@@ -508,7 +508,7 @@ const page = () => {
                             <StickyBox>
                                 {/* START ADVERTISEMENT */}
                                 <div className="add-inner">
-                                    <img
+                                    <Image
                                         src="assets/images/add320x270-1.jpg"
                                         className="img-fluid"
                                         alt=""
@@ -632,7 +632,7 @@ const page = () => {
                                                         <span className="count">03</span>
                                                         <span className="text">
                                                             <Link href="#">
-                                                                BCCI asks ECB to bear expenses of team's India tour
+                                                                BCCI asks ECB to bear expenses of team s India tour
                                                             </Link>
                                                         </span>
                                                     </li>

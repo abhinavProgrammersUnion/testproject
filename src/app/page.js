@@ -1,5 +1,5 @@
 "use client"
-
+import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation'
 import StickyBox from "react-sticky-box";
 import './globals.css'
@@ -93,7 +93,7 @@ export default function Home() {
                   <div className="col-6 col-sm-6 thm-padding">
                     <div className="slider-post post-height-4">
                       <Link href="/" className="news-image">
-                        <img
+                        <Image
                           src="assets/images/masonry/06.jpg"
                           alt=""
                           className="img-fluid"
@@ -159,7 +159,7 @@ export default function Home() {
                     {
                       data?.slice(0, 3).map((resp) => (
 
-                        <li className="post-grid">
+                        <li className="post-grid" key={resp.news_id}>
                           <div className="posts-inner px-0">
                             <h6 className="posts-title">
                               <a href="#" onClick={()=> router.push(`/newssetailpage/${resp.subtitle.split(' ').join('-')}`)}>
@@ -284,7 +284,7 @@ export default function Home() {
 
 
                             data.slice(0, 3).map((res) => (
-                              <li>
+                              <li  key={res.news_id}>
                                 <span className="count">01</span>
                                 <span className="text">
                                   <a href="#"  onClick={()=> router.push(`/newssetailpage/${res.title.split(' ').join('-')}`)}>
@@ -313,7 +313,7 @@ export default function Home() {
                           {
 
                             data.slice(0, 1).map((resp) =>
-                              <h4>
+                              <h4  key={resp.news_id}>
                                 <a href="#" dangerouslySetInnerHTML={{ __html: resp.newsdetails }}>
                                   {/* {resp.newsdetails} */}
                                 </a>
@@ -424,9 +424,9 @@ export default function Home() {
                   <div className="post-body py-0">
                     <article>
                       {ContextValue?.map((item) =>
-                        <figure>
+                        <figure  key={item.news_id}>
                           <a href="">
-                            <img
+                            <Image
                               src={item?.image_path}
                               width={345}
                               alt="imgaeData"
@@ -439,12 +439,12 @@ export default function Home() {
 
                       {
                         data.slice(0, 1).map((resp) =>
-                          <div className="post-info">
+                          <div className="post-info" key={resp.news_id}>
                             <h3 className="fs-4"  onClick={()=> router.push(`/newssetailpage/${resp.title.split(' ').join('-')}`)}>
                               
-                              <a href="#">
+                              <a href="#" >
                                 {resp.title}
-                              </a>
+                              </a > 
                             </h3>
                             <ul className="align-items-center authar-info d-flex flex-wrap gap-1">
                               <li>
@@ -473,11 +473,11 @@ export default function Home() {
                 <div className="news-grid-2 border-top pt-4 mb-4">
                   <div className="row gx-3 gx-lg-4 gy-4">
                     {data.slice(0, 6).map((resp) =>
-                      <div className="col-6 col-md-4 col-sm-6">
+                      <div className="col-6 col-md-4 col-sm-6" key={resp.news_id}>
                         <div className="grid-item mb-0">
                           <div className="grid-item-img">
                             <a href="#">
-                              <img
+                              <Image
                                 src={resp.image_path}
                                 className="img-fluid"
                                 alt="image"
@@ -511,7 +511,7 @@ export default function Home() {
 
 
                 <div className="add-inner">
-                  {/* <img
+                  {/* <Image
                     src="assets/images/add728x90-1.jpg"
                     className="img-fluid"
                     alt=""
@@ -674,7 +674,7 @@ export default function Home() {
 
                         <div key={resp.news_id} className="more-post">
                           <a href="#" className="news-image">
-                            <img
+                            <Image
                               src={resp.image_path}
                               alt="image"
                               className="img-fluid w-100"
@@ -710,10 +710,10 @@ export default function Home() {
                       {
                         data.slice(0, 1).map((resp) =>
 
-                          <div className="news-list-item p-0 mb-4">
+                          <div className="news-list-item p-0 mb-4" key={resp.news_id}>
                             <div className="img-wrapper">
                               <a href="#" className="thumb">
-                                <img
+                                <Image
                                   src={resp.image_path}
                                   alt="image"
                                   className="img-fluid"
@@ -779,9 +779,9 @@ export default function Home() {
 
 
                         data.slice(0, 1).map((resp) =>
-                          <div className="border-bottom">
+                          <div className="border-bottom" key={resp.news_id}>
                             <a href="#" className="d-block mb-3">
-                              <img
+                              <Image
                                 src={resp.image_path}
                                 alt="image"
                                 className="img-fluid w-100"
@@ -845,7 +845,7 @@ export default function Home() {
                   <div className="panel_inner mb-0">
                     <div className="panel_header">
                       <h4>
-                        <strong>EDITOR'S</strong> PICKS
+                        <strong>EDITORS</strong> PICKS
                       </h4>
                     </div>
 
@@ -853,10 +853,10 @@ export default function Home() {
                     {
                       data.slice(0, 1).map((resp) =>
 
-                        <div className="panel_body">
+                        <div className="panel_body" key={resp.news_id}>
                           <div className="border-bottom">
                             <a href="#" className="d-block mb-3">
-                              <img
+                              <Image
                                 src={resp.image_path}
                                 alt=""
                                 className="img-fluid"
@@ -921,13 +921,13 @@ export default function Home() {
                       {
                         data.slice(0, 5).map((resp) =>
 
-                          <div className="news-list-item articles-list">
+                          <div className="news-list-item articles-list" key={resp.news_id}>
                             <div className="img-wrapper">
                               <div className="align-items-center bg-primary d-flex justify-content-center position-absolute rounded-circle text-white trending-post z-1">
                                 <i className="fa-solid fa-bolt-lightning" />
                               </div>
                               <a href="#" className="thumb">
-                                <img
+                                <Image
                                   src={resp.image_path}
                                   alt=""
                                   className="img-fluid w-100"
@@ -972,7 +972,7 @@ export default function Home() {
                             <i className="fa-solid fa-bolt-lightning" />
                           </div>
                           <a href="#" className="thumb">
-                            <img
+                            <Image
                               src="assets/images/218x150-2.jpg"
                               alt=""
                               className="img-fluid w-100"
@@ -1011,7 +1011,7 @@ export default function Home() {
                             <i className="fa-solid fa-bolt-lightning" />
                           </div>
                           <a href="#" className="thumb">
-                            <img
+                            <Image
                               src="assets/images/218x150-3.jpg"
                               alt=""
                               className="img-fluid w-100"
@@ -1050,7 +1050,7 @@ export default function Home() {
                             <i className="fa-solid fa-bolt-lightning" />
                           </div>
                           <a href="#" className="thumb">
-                            <img
+                            <Image
                               src="assets/images/218x150-4.jpg"
                               alt=""
                               className="img-fluid w-100"
@@ -1089,7 +1089,7 @@ export default function Home() {
                             <i className="fa-solid fa-bolt-lightning" />
                           </div>
                           <a href="#" className="thumb">
-                            <img
+                            <Image
                               src="assets/images/218x150-5.jpg"
                               alt=""
                               className="img-fluid w-100"
@@ -1202,7 +1202,7 @@ export default function Home() {
                   {/* END OF /. POST CATEGORY STYLE FOUR (Latest articles ) */}
                   {/* START ADVERTISEMENT */}
                   {/* <div className="add-inner mb-0">
-                    <img
+                    <Image
                       src="assets/images/add728x90-2.jpg"
                       className="img-fluid"
                       alt=""
@@ -1314,8 +1314,8 @@ export default function Home() {
 
 
                   {data.slice(0, 1).map((resp) =>
-                    <div className="add-inner">
-                      <img
+                    <div className="add-inner" key={resp.news_id}>
+                      <Image
                         src={resp.image_path}
                         className="img-fluid"
                         alt="image"

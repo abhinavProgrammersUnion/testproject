@@ -1,6 +1,7 @@
 import React from 'react';
 import { useBackgroundImageLoader } from '../use-background-image/use-background-image';
 import ScrollToTopUI from '../scroll-to-top/scroll-to-top';
+import Image from 'next/image';
 
 const Footertwo = () => {
     useBackgroundImageLoader()
@@ -15,7 +16,7 @@ const Footertwo = () => {
                 <div className="container position-relative z-1">
                     <div className="g-3 row">
                         <div className="col-md-3">
-                            <img
+                           <Image
                                 src="assets/images/logo-white.png"
                                 alt="footer logo"
                                 className="img-fluid"
@@ -61,7 +62,7 @@ const Footertwo = () => {
                                 <h5 className="wiget-title">Get My App</h5>
                                 <div className="bg-white mb-3 d-inline-block">
                                     {/* Start Qr Code Image */}
-                                    <img
+                                   <image
                                         src="assets/images/qr-code.png"
                                         className="figure-img img-fluid mb-0"
                                         height={146}
@@ -168,7 +169,7 @@ const Footertwo = () => {
                                 <div className="news-list-item">
                                     <div className="img-wrapper">
                                         <a href="#" className="thumb">
-                                            <img
+                                           <image
                                                 src="assets/images/115x85-1.jpg"
                                                 alt=""
                                                 className="img-fluid"
@@ -192,7 +193,7 @@ const Footertwo = () => {
                                 <div className="news-list-item">
                                     <div className="img-wrapper">
                                         <a href="#" className="thumb">
-                                            <img
+                                           <image
                                                 src="assets/images/115x85-2.jpg"
                                                 alt=""
                                                 className="img-fluid"
@@ -216,7 +217,7 @@ const Footertwo = () => {
                                 <div className="news-list-item">
                                     <div className="img-wrapper">
                                         <a href="#" className="thumb">
-                                            <img
+                                           <image
                                                 src="assets/images/115x85-3.jpg"
                                                 alt=""
                                                 className="img-fluid"

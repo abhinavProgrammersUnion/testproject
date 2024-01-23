@@ -1,7 +1,7 @@
 
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-
+import Image from 'next/image';
 import React, { useContext, useEffect, useState } from 'react';
 import { WiDayLightning } from 'weather-icons-react';
 import ThemeChanger from '../style-selectors/style-selector';
@@ -67,32 +67,38 @@ const Header = () => {
         setOverlayActive(false);
     };
 
-    useEffect(() => {
-        const dismissOverlay = document.querySelector('#dismiss');
-        const overlay = document.querySelector('.overlay');
-        const navIcon = document.querySelector('#nav-icon');
+    
 
-        if (dismissOverlay && overlay) {
-            dismissOverlay.addEventListener('click', closeSidebar);
-            overlay.addEventListener('click', closeSidebar);
-        }
+    // useEffect(() => {
+    //     const dismissOverlay = document.querySelector('#dismiss');
+    //     const overlay = document.querySelector('.overlay');
+    //     const navIcon = document.querySelector('#nav-icon');
 
-        if (navIcon) {
-            navIcon.addEventListener('click', toggleSidebar);
-        }
+    //     if (dismissOverlay && overlay) {
+    //         dismissOverlay.addEventListener('click', closeSidebar);
+    //         overlay.addEventListener('click', closeSidebar);
+    //     }
+
+    //     if (navIcon) {
+    //         navIcon.addEventListener('click', toggleSidebar);
+    //     }
 
 
-        // Cleanup function for removing event listeners
-        return () => {
-            if (dismissOverlay && overlay) {
-                dismissOverlay.removeEventListener('click', closeSidebar);
-                overlay.removeEventListener('click', closeSidebar);
-            }
-            if (navIcon) {
-                navIcon.removeEventListener('click', toggleSidebar);
-            }
-        };
-    }, [isSidebarActive, isOverlayActive]); // R
+    //     // Cleanup function for removing event listeners
+    //     return () => {
+    //         if (dismissOverlay && overlay) {
+    //             dismissOverlay.removeEventListener('click', closeSidebar);
+    //             overlay.removeEventListener('click', closeSidebar);
+    //         }
+    //         if (navIcon) {
+    //             navIcon.removeEventListener('click', toggleSidebar);
+    //         }
+    //     };
+    // }, [isSidebarActive, isOverlayActive]); // R
+
+
+
+
     useEffect(() => {
         const fullSkinSearch = () => {
             let wHeight = window.innerHeight;
@@ -277,12 +283,12 @@ const Header = () => {
                         {/* Start Navbar Brand*/}
                         <Link className="navbar-brand d-md-none" href="/">
                             {/* <img class="logo-dark" src="assets/images/logo.png" alt=""> */}
-                            <img
+                          <Image
                                 src="assets/images/logo.png"
                                 className="header-logo_dark"
                                 alt=""
                             />
-                            <img
+                          <Image
                                 src="assets/images/logo-white.png"
                                 className="header-logo_white"
                                 alt=""
@@ -321,14 +327,14 @@ const Header = () => {
                                 {/* Start Brand Logo For Mobile */}
                                 <div className="collapse-brand flex-shrink-0">
                                     <Link href="/">
-                                        <img
+                                      <Image
                                             src="assets/images/logo.png"
                                             className="header-logo_dark"
                                             alt=""
                                         />
                                     </Link>
                                     <Link href="/">
-                                        <img
+                                      <Image
                                             src="assets/images/logo-white.png"
                                             className="header-logo_white"
                                             alt=""
@@ -368,7 +374,7 @@ const Header = () => {
                                 ))}
 
                                 {filtered?.map((res) => (
-                                    <li
+                                    <li key={res.news_id}
                                         onClick={() =>
                                             router.push(`detailPage/${res}`)
                                             // router.push(`detailPage/${res}`)
@@ -409,7 +415,7 @@ const Header = () => {
                     <div className="d-flex flex-column h-100">
                         <div className="">
                             <Link href="/" className="d-inline-block my-3">
-                                <img src="assets/images/logo-white.png" alt="" height={50} />
+                              <Image src="assets/images/logo-white.png" alt="" height={50} />
                             </Link>
                             <p>
                                 It is a long established fact that a reader will be distracted by the
@@ -442,7 +448,7 @@ const Header = () => {
                         <ul className="g-1 insta_thumb list-unstyled p-0 row">
                             <li className="col-6">
                                 <Link href="#" className="insta_effect d-inline-block position-relative">
-                                    <img
+                                  <Image
                                         src="assets/images/instagram-1.jpg"
                                         className="img-fluid"
                                         alt=""
@@ -451,7 +457,7 @@ const Header = () => {
                             </li>
                             <li className="col-6">
                                 <Link href="#" className="insta_effect d-inline-block position-relative">
-                                    <img
+                                  <Image
                                         src="assets/images/instagram-2.jpg"
                                         className="img-fluid"
                                         alt=""
@@ -460,7 +466,7 @@ const Header = () => {
                             </li>
                             <li className="col-6">
                                 <Link href="#" className="insta_effect d-inline-block position-relative">
-                                    <img
+                                  <Image
                                         src="assets/images/instagram-3.jpg"
                                         className="img-fluid"
                                         alt=""
@@ -469,7 +475,7 @@ const Header = () => {
                             </li>
                             <li className="col-6">
                                 <Link href="#" className="insta_effect d-inline-block position-relative">
-                                    <img
+                                  <Image
                                         src="assets/images/instagram-4.jpg"
                                         className="img-fluid"
                                         alt=""

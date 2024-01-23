@@ -4,18 +4,19 @@ import LayoutTwo from '@/components/ltr/layout/layout-two';
 import LeftCarousal from '@/components/ltr/left-carousal/left-carousal';
 import useRemoveBodyClass from '@/components/ltr/useEffect-hook/useEffect-hook';
 import Link from 'next/link';
-import React, { useEffect } from 'react';
+import React, { UseEffect } from 'react';
 import StickyBox from 'react-sticky-box';
-import { usePathname } from 'next/navigation';
-import { useState } from 'react'
+import { UsePathname } from 'next/navigation';
+import { UseState } from 'react'
 import axios from 'axios';
+import Image from 'next/image'
 
 
 const page = () => {
 
-    const [newStore, setStore] = useState([])
+    const [newStore, setStore] = UseState([])
     let totalResult = []
-    const pathName = usePathname().split('/newssetailpage/')[1]
+    const pathName = UsePathname().split('/newssetailpage/')[1]
     console.log(pathName,"testingggg");
     newStore.map((item) => {
         if (item.title.split(' ').join('-') === pathName) {
@@ -23,7 +24,7 @@ const page = () => {
         }
     });
 
-    useEffect(() => {
+    UseEffect(() => {
         const fetchData = async () => {
             await axios.get('https://free-domain.in/Sreeja/api/newsarticle.php').then((resp) => {
                 setStore(resp.data);
@@ -70,11 +71,11 @@ const page = () => {
                                         <div className="row row-m">
 
                                             {totalResult.map((item) =>
-                                                <div className="col-md-12 col-p">
+                                                <div className="col-md-12 col-p" key={item.news_id}>
                                                     <article>
                                                         <figure>
                                                             <a href="">
-                                                                <img
+                                                                <Image
                                                                     src={item.image_path}
                                                                     height={242}
                                                                     width={345}
@@ -158,7 +159,7 @@ const page = () => {
 
                                 {
                                     totalResult?.map((res) =>
-                                        <div className="add-inner">
+                                        <div className="add-inner" key={res.news_id}>
 
 
                                             <p style={{ color: "black",marginTop:"22px" }} dangerouslySetInnerHTML={{ __html: res.newsdetails }} />

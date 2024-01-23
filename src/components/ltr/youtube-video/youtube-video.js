@@ -1,7 +1,7 @@
 
 "use client"
 import React, { useState } from 'react';
-
+import Image from 'next/image';
 const YoutubeVideo = () => {
   const initialVideos = [
     {
@@ -72,7 +72,7 @@ const YoutubeVideo = () => {
                         {video.author}
                       </small>
                     </p>
-                    <img
+                   <Image
                       src={video.thumbnailUrl}
                       className="thumb"
                       alt={`Thumbnail ${index + 1}`}

@@ -2,11 +2,12 @@
 
 import LayoutTwo from "@/components/ltr/layout/layout-two";
 import LeftCarousal from "@/components/ltr/left-carousal/left-carousal";
-import useRemoveBodyClass from "@/components/ltr/useEffect-hook/useEffect-hook";
+import UseRemoveBodyClass from "@/components/ltr/useEffect-hook/useEffect-hook";
 import Link from "next/link";
 import StickyBox from "react-sticky-box";
+import Image from 'next/image';
 const page = () => {
-    useRemoveBodyClass(['None'], ['home-seven', 'home-nine', 'boxed-layout', 'home-six', 'home-two']);
+    UseRemoveBodyClass(['None'], ['home-seven', 'home-nine', 'boxed-layout', 'home-six', 'home-two']);
     return (
 
         <LayoutTwo>
@@ -51,7 +52,7 @@ const page = () => {
                                     <div className="col-6 col-sm-6 thm-padding">
                                         <div className="slider-post post-height-2">
                                             <a href="#" className="news-image">
-                                                <img
+                                               <Image
                                                     src="assets/images/slider-260x230-7.jpg"
                                                     alt=""
                                                     className="img-fluid"
@@ -76,7 +77,7 @@ const page = () => {
                                     <div className="col-6 col-sm-6 thm-padding">
                                         <div className="slider-post post-height-2">
                                             <a href="#" className="news-image">
-                                                <img
+                                               <Image
                                                     src="assets/images/slider-260x230-8.jpg"
                                                     alt=""
                                                     className="img-fluid"
@@ -101,7 +102,7 @@ const page = () => {
                                     <div className="col-6 col-sm-6 thm-padding">
                                         <div className="slider-post post-height-2">
                                             <a href="#" className="news-image">
-                                                <img
+                                               <Image
                                                     src="assets/images/slider-260x230-9.jpg"
                                                     alt=""
                                                     className="img-fluid"
@@ -126,7 +127,7 @@ const page = () => {
                                     <div className="col-6 col-sm-6 thm-padding">
                                         <div className="slider-post post-height-2">
                                             <a href="#" className="news-image">
-                                                <img
+                                               <Image
                                                     src="assets/images/slider-260x230-10.jpg"
                                                     alt=""
                                                     className="img-fluid"
@@ -171,7 +172,7 @@ const page = () => {
                                         <div className="news-list-item articles-list">
                                             <div className="img-wrapper">
                                                 <a href="#" className="thumb">
-                                                    <img
+                                                   <Image
                                                         src="assets/images/218x150-1.jpg"
                                                         alt=""
                                                         className="img-fluid"
@@ -198,7 +199,7 @@ const page = () => {
                                                 </ul>
                                                 <p className="d-lg-block d-none">
                                                     Lorem Ipsum is simply dummy text of the printing and
-                                                    typesetting industry. Lorem Ipsum has been the industry's
+                                                    typesetting industry. Lorem Ipsum has been the industry s
                                                     standard dummy text ever since the 1500s, when an unknown
                                                     printer took a galley...
                                                 </p>
@@ -207,7 +208,7 @@ const page = () => {
                                         <div className="news-list-item articles-list">
                                             <div className="img-wrapper">
                                                 <a href="#" className="thumb">
-                                                    <img
+                                                   <Image
                                                         src="assets/images/218x150-2.jpg"
                                                         alt=""
                                                         className="img-fluid"
@@ -234,7 +235,7 @@ const page = () => {
                                                 </ul>
                                                 <p className="d-lg-block d-none">
                                                     Lorem Ipsum is simply dummy text of the printing and
-                                                    typesetting industry. Lorem Ipsum has been the industry's
+                                                    typesetting industry. Lorem Ipsum has been the industry s
                                                     standard dummy text ever since the 1500s, when an unknown
                                                     printer took a galley...
                                                 </p>
@@ -243,7 +244,7 @@ const page = () => {
                                         <div className="news-list-item articles-list">
                                             <div className="img-wrapper">
                                                 <a href="#" className="thumb">
-                                                    <img
+                                                   <Image
                                                         src="assets/images/218x150-3.jpg"
                                                         alt=""
                                                         className="img-fluid"
@@ -270,7 +271,7 @@ const page = () => {
                                                 </ul>
                                                 <p className="d-lg-block d-none">
                                                     Lorem Ipsum is simply dummy text of the printing and
-                                                    typesetting industry. Lorem Ipsum has been the industry's
+                                                    typesetting industry. Lorem Ipsum has been the industry s
                                                     standard dummy text ever since the 1500s, when an unknown
                                                     printer took a galley...
                                                 </p>
@@ -279,7 +280,7 @@ const page = () => {
                                         <div className="news-list-item articles-list">
                                             <div className="img-wrapper">
                                                 <a href="#" className="thumb">
-                                                    <img
+                                                   <Image
                                                         src="assets/images/218x150-4.jpg"
                                                         alt=""
                                                         className="img-fluid"
@@ -306,7 +307,7 @@ const page = () => {
                                                 </ul>
                                                 <p className="d-lg-block d-none">
                                                     Lorem Ipsum is simply dummy text of the printing and
-                                                    typesetting industry. Lorem Ipsum has been the industry's
+                                                    typesetting industry. Lorem Ipsum has been the industry s
                                                     standard dummy text ever since the 1500s, when an unknown
                                                     printer took a galley...
                                                 </p>
@@ -315,7 +316,7 @@ const page = () => {
                                         <div className="news-list-item articles-list">
                                             <div className="img-wrapper">
                                                 <a href="#" className="thumb">
-                                                    <img
+                                                   <Image
                                                         src="assets/images/340x215-1.jpg"
                                                         alt=""
                                                         className="img-fluid"
@@ -341,7 +342,7 @@ const page = () => {
                                                 </ul>
                                                 <p className="d-lg-block d-none">
                                                     Lorem Ipsum is simply dummy text of the printing and
-                                                    typesetting industry. Lorem Ipsum has been the industry's
+                                                    typesetting industry. Lorem Ipsum has been the industry s
                                                     standard dummy text ever since the 1500s, when an unknown
                                                     printer took a galley...
                                                 </p>
@@ -449,7 +450,7 @@ const page = () => {
                                 {/* END OF /. SOCIAL ICON */}
                                 {/* START ADVERTISEMENT */}
                                 <div className="add-inner">
-                                    <img
+                                   <Image
                                         src="assets/images/add320x270-1.jpg"
                                         className="img-fluid"
                                         alt=""
@@ -518,7 +519,7 @@ const page = () => {
                                                         <span className="count">03</span>
                                                         <span className="text">
                                                             <a href="#">
-                                                                BCCI asks ECB to bear expenses of team's India tour
+                                                                BCCI asks ECB to bear expenses of team s India tour
                                                             </a>
                                                         </span>
                                                     </li>

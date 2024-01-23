@@ -2,12 +2,12 @@
 
 import GoogleMapComponents from "@/components/ltr/google-map/google-map";
 import LayoutTwo from "@/components/ltr/layout/layout-two";
-import useRemoveBodyClass from "@/components/ltr/useEffect-hook/useEffect-hook";
+import UseRemoveBodyClass from "@/components/ltr/useEffect-hook/useEffect-hook";
 import Link from "next/link";
 
 import StickyBox from "react-sticky-box";
 const page = () => {
-    useRemoveBodyClass(['None'], ['home-seven', 'home-nine','boxed-layout','home-six','home-two']);
+    UseRemoveBodyClass(['None'], ['home-seven', 'home-nine','boxed-layout','home-six','home-two']);
     return (
         <LayoutTwo>
             {/* START PAGE TITLE */}
@@ -47,14 +47,14 @@ const page = () => {
                                     <div className="panel_inner">
                                         <div className="panel_header">
                                             <h4>
-                                                <strong>We'd Love to Here</strong> Form you, Get in Touch
+                                                <strong>Wed Love to Here</strong> Form you  Get in Touch
                                                 With in Us?{" "}
                                             </h4>
                                         </div>
                                         <div className="panel_body">
                                             <p>
                                                 Lorem Ipsum is simply dummy text of the printing and
-                                                typesetting industry. Lorem Ipsum has been the industry's
+                                                typesetting industry. Lorem Ipsum has been the industry s
                                                 standard dummy text ever since the 1500s, when an unknown
                                                 printer took a galley of type and scrambled it to make a
                                                 type specimen book. It has survived not only five centuries,

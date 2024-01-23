@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import 'animate.css/animate.css'
-
+import Image from 'next/image';
 
 if (typeof window !== "undefined") {
     window.$ = window.jQuery = require("jquery");
@@ -46,7 +46,7 @@ const FeatureCarousal = () => {
         <div className="item">
             <div className="featured-post">
                 <a href="#" className="news-image">
-                    <img
+                  <Image
                         src="assets/images/featured-620x370-1.jpg"
                         alt=""
                         className="img-fluid"
@@ -79,7 +79,7 @@ const FeatureCarousal = () => {
         <div className="item">
             <div className="featured-post">
                 <a href="#" className="news-image">
-                    <img
+                  <Image
                         src="assets/images/featured-620x370-2.jpg"
                         alt=""
                         className="img-fluid"
@@ -112,7 +112,7 @@ const FeatureCarousal = () => {
         <div className="item">
             <div className="featured-post">
                 <a href="#" className="news-image">
-                    <img
+                  <Image
                         src="assets/images/featured-620x370-3.jpg"
                         alt=""
                         className="img-fluid"
@@ -145,7 +145,7 @@ const FeatureCarousal = () => {
         <div className="item">
             <div className="featured-post">
                 <a href="#" className="news-image">
-                    <img
+                  <Image
                         src="assets/images/featured-620x370-4.jpg"
                         alt=""
                         className="img-fluid"
@@ -178,7 +178,7 @@ const FeatureCarousal = () => {
         <div className="item">
             <div className="featured-post">
                 <a href="#" className="news-image">
-                    <img
+                  <Image
                         src="assets/images/featured-620x370-5.jpg"
                         alt=""
                         className="img-fluid"

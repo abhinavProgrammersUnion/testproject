@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import 'animate.css/animate.css'
-
+import Image from 'next/image';
 import {useState,useEffect} from 'react'
 
 import axios from 'axios'
@@ -73,11 +73,11 @@ useEffect(() => {
 
   {  
   data.slice(0,5).map((res)=>
-<div className="news-list-item">
+<div className="news-list-item" key={res.news_id}>
   {console.log(res.category,'$$$$$$$$$$$')}
         <div className="img-wrapper">
           <a href="#" className="thumb">
-            <img
+            <Image
               src={res.image_path}
               alt="image"
               className="img-fluid"
@@ -104,7 +104,7 @@ useEffect(() => {
       {/* <div className="news-list-item">
         <div className="img-wrapper">
           <a href="#" className="thumb">
-            <img
+            <Image
               src="assets/images/115x85-9.jpg"
               alt=""
               className="img-fluid"
@@ -126,7 +126,7 @@ useEffect(() => {
       <div className="news-list-item">
         <div className="img-wrapper">
           <a href="#" className="thumb">
-            <img
+            <Image
               src="assets/images/115x85-3.jpg"
               alt=""
               className="img-fluid"
@@ -148,7 +148,7 @@ useEffect(() => {
       <div className="news-list-item">
         <div className="img-wrapper">
           <a href="#" className="thumb">
-            <img
+            <Image
               src="assets/images/115x85-10.jpg"
               alt=""
               className="img-fluid"

@@ -2,13 +2,14 @@
 
 import LayoutTwo from '@/components/ltr/layout/layout-two';
 import LeftCarousal from '@/components/ltr/left-carousal/left-carousal';
-import useRemoveBodyClass from '@/components/ltr/useEffect-hook/useEffect-hook';
+import UseRemoveBodyClass from '@/components/ltr/useEffect-hook/useEffect-hook';
 import Link from 'next/link';
 import React, { useEffect } from 'react';
 import StickyBox from 'react-sticky-box';
+import Image from 'next/image';
 
 const page = () => {
-    useRemoveBodyClass(['None'], ['home-seven', 'home-nine','boxed-layout','home-six','home-two']);
+    UseRemoveBodyClass(['None'], ['home-seven', 'home-nine','boxed-layout','home-six','home-two']);
     return (
         <LayoutTwo>
             {/* START PAGE TITLE */}
@@ -54,7 +55,7 @@ const page = () => {
                                     <div className="col-6 col-sm-6 thm-padding">
                                         <div className="slider-post post-height-2">
                                             <a href="#" className="news-image">
-                                                <img
+                                                <Image
                                                     src="assets/images/slider-260x230-7.jpg"
                                                     alt=""
                                                     className="img-fluid"
@@ -79,7 +80,7 @@ const page = () => {
                                     <div className="col-6 col-sm-6 thm-padding">
                                         <div className="slider-post post-height-2">
                                             <a href="#" className="news-image">
-                                                <img
+                                                <Image
                                                     src="assets/images/slider-260x230-8.jpg"
                                                     alt=""
                                                     className="img-fluid"
@@ -104,7 +105,7 @@ const page = () => {
                                     <div className="col-6 col-sm-6 thm-padding">
                                         <div className="slider-post post-height-2">
                                             <a href="#" className="news-image">
-                                                <img
+                                                <Image
                                                     src="assets/images/slider-260x230-9.jpg"
                                                     alt=""
                                                     className="img-fluid"
@@ -129,7 +130,7 @@ const page = () => {
                                     <div className="col-6 col-sm-6 thm-padding">
                                         <div className="slider-post post-height-2">
                                             <a href="#" className="news-image">
-                                                <img
+                                                <Image
                                                     src="assets/images/slider-260x230-10.jpg"
                                                     alt=""
                                                     className="img-fluid"
@@ -170,7 +171,7 @@ const page = () => {
                                                 <article>
                                                     <figure>
                                                         <a href="">
-                                                            <img
+                                                            <Image
                                                                 src="assets/images/340x215-1.jpg"
                                                                 height={242}
                                                                 width={345}
@@ -205,7 +206,7 @@ const page = () => {
                                                 <article>
                                                     <figure>
                                                         <a href="">
-                                                            <img
+                                                            <Image
                                                                 src="assets/images/340x215-11.jpg"
                                                                 height={242}
                                                                 width={345}
@@ -240,7 +241,7 @@ const page = () => {
                                                 <article>
                                                     <figure>
                                                         <a href="">
-                                                            <img
+                                                            <Image
                                                                 src="assets/images/340x215-3.jpg"
                                                                 height={242}
                                                                 width={345}
@@ -274,7 +275,7 @@ const page = () => {
                                                 <article>
                                                     <figure>
                                                         <a href="">
-                                                            <img
+                                                            <Image
                                                                 src="assets/images/340x215-4.jpg"
                                                                 height={242}
                                                                 width={345}
@@ -308,7 +309,7 @@ const page = () => {
                                                 <article>
                                                     <figure>
                                                         <a href="">
-                                                            <img
+                                                            <Image
                                                                 src="assets/images/340x215-5.jpg"
                                                                 height={242}
                                                                 width={345}
@@ -342,7 +343,7 @@ const page = () => {
                                                 <article>
                                                     <figure>
                                                         <a href="">
-                                                            <img
+                                                            <Image
                                                                 src="assets/images/340x215-6.jpg"
                                                                 height={242}
                                                                 width={345}
@@ -376,7 +377,7 @@ const page = () => {
                                                 <article>
                                                     <figure>
                                                         <a href="">
-                                                            <img
+                                                            <Image
                                                                 src="assets/images/340x215-7.jpg"
                                                                 height={242}
                                                                 width={345}
@@ -411,7 +412,7 @@ const page = () => {
                                                 <article>
                                                     <figure>
                                                         <a href="">
-                                                            <img
+                                                            <Image
                                                                 src="assets/images/340x215-8.jpg"
                                                                 height={242}
                                                                 width={345}
@@ -446,7 +447,7 @@ const page = () => {
                                                 <article>
                                                     <figure>
                                                         <a href="">
-                                                            <img
+                                                            <Image
                                                                 src="assets/images/340x215-9.jpg"
                                                                 height={242}
                                                                 width={345}
@@ -480,7 +481,7 @@ const page = () => {
                                                 <article>
                                                     <figure>
                                                         <a href="">
-                                                            <img
+                                                            <Image
                                                                 src="assets/images/340x215-10.jpg"
                                                                 height={242}
                                                                 width={345}
@@ -612,7 +613,7 @@ const page = () => {
                                 {/* END OF /. SOCIAL ICON */}
                                 {/* START ADVERTISEMENT */}
                                 <div className="add-inner">
-                                    <img
+                                    <Image
                                         src="assets/images/add320x270-1.jpg"
                                         className="img-fluid"
                                         alt=""
@@ -681,7 +682,7 @@ const page = () => {
                                                         <span className="count">03</span>
                                                         <span className="text">
                                                             <a href="#">
-                                                                BCCI asks ECB to bear expenses of team's India tour
+                                                                BCCI asks ECB to bear expenses of team s India tour
                                                             </a>
                                                         </span>
                                                     </li>
